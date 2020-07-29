@@ -1,0 +1,10 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const product_repository_1 = require("./product-repository");
+let productRepository = new product_repository_1.ProductRepository();
+let products = productRepository.getItems();
+let productID = productRepository.getItemByID(109);
+let productItems = productRepository.showItemInHTML();
+document.getElementById("list-product").innerHTML = productItems;
+// console.log(products);
+console.log(productID);
